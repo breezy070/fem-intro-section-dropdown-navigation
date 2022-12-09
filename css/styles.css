@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Epilogue:wght@500;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+
+--almost-white: hsl(0, 0%, 98%);
+--medium-gray:hsl(0, 0%, 41%);
+--almost-black:hsl(0, 0%, 8%)
+
+}
+
+
 /* Box sizing rules */
 *,
 *::before,
@@ -33,8 +44,12 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--almost-white);
+  font-family: 'Epilogue', sans-serif;
+
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,3 +90,49 @@ select {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+.navbar-brand {
+    margin-right: 5%;
+}
+
+
+.rounder-pill {
+    border-radius: 18px;
+}
+
+.container {
+    display: flex;
+    gap: 3%;
+    padding: 25px 50px 75px 100px;
+
+}
+
+.hero-section {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10%;
+    
+}
+
+.hero-image {
+    
+}
+
+.logos {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+
+
+.text-bold {
+    font-weight: bold;
+}
