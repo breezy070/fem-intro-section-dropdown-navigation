@@ -109,12 +109,34 @@ select {
 #container-id {
     display: flex;
     align-items: flex-end;
-    padding-top: 38px;
-    
+    /* padding-top: 38px; */
+    padding-top: 15px;
     
     /* padding: 25px 50px 75px 100px; */
 
 }
+
+@media only screen and (min-width: 1018px) {
+  #container-id {
+
+    padding-top: 100px;
+    
+
+}
+}
+
+@media only screen and (max-width: 1405px) {
+  #container-id {
+
+    padding-top: 50px;
+}
+
+
+
+
+}
+
+
 
 .hero-section {
   
@@ -141,7 +163,7 @@ select {
 }
 
 .hero-image > img {
-width: 80%;
+width: 60%;
 }
 
 
