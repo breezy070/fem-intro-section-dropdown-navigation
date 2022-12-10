@@ -33,7 +33,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="./images/logo.svg" /></a>
         <button
@@ -64,13 +64,39 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarScrollingDropdown"
               >
-                <li><a class="dropdown-item" href="#">Todo List</a></li>
-                <li><a class="dropdown-item" href="#">Calendar</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Reminders</a>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-todo.svg"
+                      style="display: inline-block; margin-right: 17px"
+                    />
+                    Todo List</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      style="display: inline-block; margin-right: 19px"
+                    />Calendar</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Planning</a>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      style="display: inline-block; margin-right: 23px"
+                    />Reminders</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-planning.svg"
+                      style="display: inline-block; margin-right: 20px"
+                    />Planning</a
+                  >
                 </li>
               </ul>
             </li>
@@ -108,6 +134,164 @@
             <button
               class="btn btn-outline-secondary rounder-pill"
               type="submit"
+              style="margin-left: 2em"
+            >
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      aria-label="Main navigation"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./images/logo.svg" /></a>
+        <button
+          class="navbar-toggler p-0 border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="navbar-collapse offcanvas-collapse"
+          id="navbarsExampleDefault"
+        >
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Switch account</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Settings</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Features
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-todo.svg"
+                      style="display: inline-block; margin-right: 17px"
+                    />
+                    Todo List</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      style="display: inline-block; margin-right: 19px"
+                    />Calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      style="display: inline-block; margin-right: 23px"
+                    />Reminders</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><img
+                      src="./images/icon-planning.svg"
+                      style="display: inline-block; margin-right: 20px"
+                    />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn text-secondary" type="submit">Login</button>
+            <button
+              class="btn btn-outline-secondary rounder-pill"
+              type="submit"
+              style="margin-left: 2em"
             >
               Register
             </button>
@@ -116,18 +300,90 @@
       </div>
     </nav>
 
+    <!-- <nav class="navbar navbar-expand-lg bg-light">
+      <a class="navbar-brand" href="#"><img src="./images/logo.svg" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navbarOffcanvasLg"
+        aria-controls="navbarOffcanvasLg"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="navbarOffcanvasLg"
+        aria-labelledby="navbarOffcanvasLgLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="./images/logo.svg" />
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+
     <main>
-      <div class="container">
+      <div class="container" id="container-id">
         <div class="hero-section">
-          <h1 class="text-bold" style="font-size: 56px">
-            Make <br />
-            remote work
-          </h1>
+          <h1 class="text-bold" style="font-size: 56px">Make remote work</h1>
           <p style="font-size: 16px; width: 73%">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <button type="button" class="btn btn-dark">Learn More</button>
+          <button type="button" class="btn btn-dark learnmore-btn">
+            Learn More
+          </button>
           <div class="logos">
             <img src="./images/client-databiz.svg" />
             <img src="./images/client-audiophile.svg" />
@@ -135,8 +391,9 @@
             <img src="./images/client-maker.svg" />
           </div>
         </div>
-        <div class="hero-image">
-          <img src="./images/image-hero-desktop.png" />
+        <div class="hero-image img-fluid">
+          <img src="./images/image-hero-desktop.png" class="image-desktop" />
+          <img src="./images/image-hero-mobile.png" class="image-mobile" />
         </div>
       </div>
     </main>
@@ -155,5 +412,27 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/bf4b22f18a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./js.js"></script>
+
+    <script>
+      $(window).on("resize", function () {
+        var win = $(this);
+        if (win.width() < 986) {
+          $("#container-id").addClass("container-fluid");
+          $("#container-id").removeClass("container");
+          console.log("jquery worked");
+        } else {
+          $("#container-id").removeClass("container-fluid"); //
+          $("#container-id").addClass("container");
+        }
+      });
+    </script>
   </body>
 </html>
